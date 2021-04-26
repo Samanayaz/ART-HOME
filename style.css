@@ -1,0 +1,303 @@
+
+  .header {
+    background: rgb(139, 3, 60);
+    width: 100%;
+    height: 80%;
+  }
+  .logo-img {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 2em;
+    margin-right: 20px;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+    padding: 1em;
+  }
+  .far {
+      padding-right: 4px;
+  }
+  li a {
+    padding-right: 1em;
+    font-size: 1em;
+    color: white;
+    margin-top: 5px;
+  }
+ 
+  .nav {
+    padding-right: 4em;
+  }
+  .nav a {
+    color: black;
+    padding: 20px 2em 20px 0;
+  }
+  /* .RV {
+    margin-left: 0em;
+  } */
+  
+  .main-img img {
+    width: 100%;
+    height: 417px;
+  }
+  
+  .brand-nav-bar {
+    text-align: center;
+    margin-top: -1em;
+    margin-bottom: 2em;
+  }
+  .brand-logo{
+      margin: -1em 0 1em 0; 
+  }
+  .brand-nav-bar a {
+    color: black;
+    padding: 2em;
+  }
+  
+  .brand img {
+    position: relative;
+    top: 40px;
+    left: 30px;
+  }
+  .shop-btn {
+    float: right;
+    padding-right: 2em;
+    position: relative;
+    bottom: 30px;
+  }
+
+  .search {
+    position: relative;
+    bottom: 2em;
+    right: 2em;
+    border: 1px solid transparent;
+    border-radius: 20px; 
+    float: right; 
+    margin: -1em 0;
+  }
+
+  Input.search-bar{
+      font-size: 10px;
+      padding: 5px;
+      border: none;
+      background-color: rgb(181, 255, 224);
+      width: 24em;
+      border: 2px solid transparent;
+      border-radius: 20px 0 0 20px ; 
+    
+  }
+  
+  .sr-btn {
+    background-color: rgb(0, 199, 139);
+    color: whitesmoke;
+    border: 1px solid rgb(171, 248, 194);
+    border-radius: 0 20px 20px 0;
+    margin-left: -15px;
+    position: absolute;
+   
+
+}
+
+hr.style-four {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 16px -16px rgba(0, 0, 0, 0.5);
+}
+
+.aboutus-bg img{
+    width: 70%;
+}
+
+#cougar-container{
+    /* background-image: url("../Assessment-CW/img/about\ us\ background.png"); */
+    background-color: rgb(79, 145, 125);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.video {
+    padding-left: 1em;
+    position: relative;
+    top: 2em;
+}
+.cou-detail p{
+    margin: 3em;
+    padding-top: 6em;
+}
+.cougar-h2{ 
+    position: relative;
+    left: 3em;
+    padding-bottom:2em;
+    
+}
+
+.gallery img {
+    width: 100%;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    background: linear-gradient(to top, white 40%, rgb(79, 145, 125) 60%);
+    background-size: 50%;
+    width: 100%;
+    padding:0 20px; 
+}
+
+.item-a {
+    grid-column: 4;
+  grid-row: 3;
+  
+  }
+  .item-b {
+    grid-column: 2;
+  grid-row: 2/ 3;
+  }
+  .item-c {
+    grid-column: 1;
+  grid-row: 2 / 5;
+  }
+  .item-d {
+    grid-column: 3;
+  grid-row: 3/4;
+  }
+  .item-e {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .item-f {
+    grid-column: 3/5;
+    grid-row: 2;
+  }
+   
+  .view-more {
+      float: right;
+      margin-right: 1.5em;
+  }
+
+  .key-h2 {
+      padding: 2em;
+  }
+   
+  .key-gallery {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-evenly;
+  }
+  .key-gallery div button {
+   font-size: 0.6em;
+  }
+  .key-gallery img{
+    width: 100%;
+  }
+
+  @media (max-width: 1106px) {
+    .brand-nav-bar a {
+      color: black;
+      padding: 0 1em;
+    }
+  
+    li a {
+      padding-right: 1em;
+      font-size: 1em;
+      color: white;
+      margin-top: 4px;
+    }
+    .nav-bar a{
+        font-size: 14px;
+    }
+    .shop-btn{
+      visibility: hidden;
+    }
+  }
+
+  @media (max-width: 950px){
+    .nav-bar a{
+        font-size: 12px;
+    }
+    
+    Input.search-bar{
+        font-size: 10px;
+        margin-top: 2px;
+    } 
+    .key-gallery{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     justify-items: center;
+     }
+     .shop-btn{
+       visibility: visible;
+     }
+  }
+
+  @media (max-width: 845px) {
+    .main-img img {
+        margin-top: -1.5em;
+      }
+     .nav-bar {
+         display: none;
+     } 
+     .brand-nav {
+        display: none; 
+     }
+
+     .shop-btn{
+        position: relative;
+        bottom: 25px;
+     }
+     .brand-logo{
+        padding-bottom:1em; 
+    }
+    #cougar-container {
+        display: flex;
+    }
+
+    .cou-detail p{
+        font-size: 12px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    
+    .main-img img {
+        width: 100%;
+        height: 300px;
+        margin-top: -1.5em;
+      }
+     #cougar-container{
+         display: flex;
+         flex-direction: column;
+         margin-bottom: -15em;
+     }
+     .shop-btn button{
+       font-size: 12px;
+     }
+     .brand-logo{
+      margin-left: -1.5em; 
+  }
+     .view-more {
+        margin-top: -5em;
+        }
+     .key-gallery {
+        flex: 50%;
+     }
+    .Keystone h2, .video h2 {
+         font-size: 20px;
+     }
+    .gallery {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .shop-btn{
+      visibility: hidden;
+    }
+    }
